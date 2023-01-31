@@ -39,16 +39,16 @@ text-transform: uppercase;
 }
 
 .logo {
-width: 0;
-height: 0;
+max-width: 0;
+overflow: hidden;
+color: #0d1b2a;
+background-color: #fbffff;
+font-weight: 700;
 transition: all 0.7s;
 }
 
 .logo.scrolled {
-color: #0d1b2a;
-background-color: #fbffff;
-font-weight: 700;
-height: max-content;
+max-width: 500px;
 }
 
 .container {

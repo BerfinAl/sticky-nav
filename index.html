@@ -23,7 +23,7 @@
       </h2>
     </header>
     <nav>
-    <div class="logo"></div>
+    <div class="logo">K2</div>
       <div class="nav-el">Home</div>
       <div class="nav-el">About</div>
       <div class="nav-el">Images</div>
@@ -132,11 +132,9 @@ const logo = document.querySelector(".logo")
 document.addEventListener("scroll" , (e) => {
 if (img.height < window.scrollY) {
 nav.style.position = "sticky"
-logo.innerHTML = "K2"
-logo.classList.add("nav-el" , "scrolled")
+logo.classList.add("nav-el", "scrolled")
 container.classList.add("scrolled")
 } else {
-logo.innerHTML = ""
 logo.classList.remove("nav-el", "scrolled")
 container.classList.remove("scrolled")
 }
